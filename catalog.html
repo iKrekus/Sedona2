@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/source/favicon.ico"><!-- 32×32 -->
+    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/favicon-180.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>HTML Academy: Каталог</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/logos/logo.svg" width="185" height="96" alt="Логотип 'Седона'.">
+      </a>
+      <div class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Меню</span>
+        </button>
+        <nav class="main-nav__wrapper">
+          <div class="main-nav__part-wrapper">
+            <a class="main-nav__item" href="index.html">
+              Главная
+            </a>
+            <a class="main-nav__item main-nav__item--current" href="catalog.html">
+              Фото и видео
+            </a>
+          </div>
+          <div class="main-nav__part-wrapper">
+            <a class="main-nav__item" href="form.html">
+              Форма отзыва
+            </a>
+            <a class="main-nav__item" href="https://htmlacademy.ru/">
+              HTMLACADEMY
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Каталог</h1>
+      <div class="single-page-head-wrapper">
+        <section class="page-head-content container">
+          <h2 class="page-head-content__title">
+            Фото и видео
+          </h2>
+          <div class="catalog-item-content-wrapper">
+            <p class="page-head-content__description">
+              Не можете решиться на путешествие из-за курса? <br>Фотографии помогут вам забыть о политике и экономике.
+            </p>
+          </div>
+        </section>
+      </div>
+      <div class="catalog-content">
+        <section class="catalog-item catalog-item--current container">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/photo-1-desktop@1x.webp 1x, img/photo/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo/photo-1-desktop@1x.webp 1x, img/photo/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo/photo-1-mobile@1x.webp 1x, img/photo/photo-1-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo/photo-1-desktop@1x.jpg 1x, img/photo/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo/photo-1-desktop@1x.jpg 1x, img/photo/photo-1-desktop@2x.jpg 2x">
+              <img class="catalog-item__image" src="img/photo/photo-1-mobile@1x.jpg" srcset="img/photo/photo-1-mobile@2x.jpg 2x"  alt="Фото: Неродные просторы." width="280" height="280">
+            </picture>
+          </a>
+          <div class="catalog-item__wrapper">
+            <div class="catalog-item__description-wrapper">
+              <h3 class="catalog-item__title">
+                Неродные просторы
+              </h3>
+              <p class="catalog-item__description">
+                Автор фото: Борис
+              </p>
+            </div>
+            <div class="catalog-item__likes-counter">
+              <button class="catalog-item__button catalog-item__button--like" aria-label="Нравится" type="button">
+                <svg width="23" height="21" fill="currentColor">
+                  <use href="img/sprite.svg#like-icon"></use>
+                </svg>
+              </button>
+              1350
+            </div>
+          </div>
+        </section>
+        <section class="catalog-item container">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/photo-2-desktop@1x.webp 1x, img/photo/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo/photo-2-desktop@1x.webp 1x, img/photo/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo/photo-2-mobile@1x.webp 1x, img/photo/photo-2-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo/photo-2-desktop@1x.jpg 1x, img/photo/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo/photo-2-desktop@1x.jpg 1x, img/photo/photo-2-desktop@2x.jpg 2x">
+              <img class="catalog-item__image" src="img/photo/photo-2-mobile@1x.jpg" srcset="img/photo/photo-2-desktop@2x.jpg 2x" alt="Фото: Местная растительность." width="280" height="280">
+            </picture>
+          </a>
+          <div class="catalog-item__wrapper">
+            <div class="catalog-item__description-wrapper">
+              <h3 class="catalog-item__title">
+                Местная растительность
+              </h3>
+              <p class="catalog-item__description">
+                Автор фото: Сергей
+              </p>
+            </div>
+            <div class="catalog-item__likes-counter">
+              <button class="catalog-item__button catalog-item__button--like" aria-label="Нравится" type="button">
+                <svg width="23" height="21" fill="currentColor">
+                  <use href="img/sprite.svg#like-icon"></use>
+                </svg>
+              </button>
+              143
+            </div>
+          </div>
+        </section>
+        <section class="catalog-item container">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/photo-3-desktop@1x.webp 1x, img/photo/photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo/photo-3-desktop@1x.webp 1x, img/photo/photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo/photo-3-mobile@1x.webp 1x, img/photo/photo-3-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo/photo-3-desktop@1x.jpg 1x, img/photo/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo/photo-3-desktop@1x.jpg 1x, img/photo/photo-3-desktop@2x.jpg 2x">
+              <img class="catalog-item__image" src="img/photo/photo-3-mobile@1x.jpg" srcset="img/photo/photo-3-desktop@2x.jpg 2x" alt="Фото: Дорога на север." width="280" height="280">
+            </picture>
+          </a>
+          <div class="catalog-item__wrapper">
+            <div class="catalog-item__description-wrapper">
+              <h3 class="catalog-item__title">
+                Дорога на север
+              </h3>
+              <p class="catalog-item__description">
+                Автор фото: Петр
+              </p>
+            </div>
+            <div class="catalog-item__likes-counter">
+              <button class="catalog-item__button catalog-item__button--like" aria-label="Нравится" type="button">
+                <svg width="23" height="21" fill="currentColor">
+                  <use href="img/sprite.svg#like-icon"></use>
+                </svg>
+              </button>
+              96
+            </div>
+          </div>
+        </section>
+        <section class="catalog-item container">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo/photo-4-mobile@1x.webp 1x, img/photo/photo-4-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo/photo-4-mobile@1x.webp 1x, img/photo/photo-4-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo/photo-4-mobile@1x.webp 1x, img/photo/photo-4-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo/photo-4-desktop@1x.jpg 1x, img/photo/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo/photo-4-desktop@1x.jpg 1x, img/photo/photo-4-desktop@2x.jpg 2x">
+              <img class="catalog-item__image" src="img/photo/photo-4-mobile@1x.jpg" srcset="img/photo/photo-4-mobile@2x.jpg 2x" alt="Фото: Мост дьявола." width="280" height="280">
+            </picture>
+          </a>
+          <div class="catalog-item__wrapper">
+            <div class="catalog-item__description-wrapper">
+              <h3 class="catalog-item__title">
+                Мост дьявола
+              </h3>
+              <p class="catalog-item__description">
+                Автор фото: Антон
+              </p>
+            </div>
+            <div class="catalog-item__likes-counter">
+              <button class="catalog-item__button catalog-item__button--like" aria-label="Нравится" type="button">
+                <svg width="24" height="24" fill="currentColor">
+                  <use href="img/sprite.svg#like-icon"></use>
+                </svg>
+              </button>
+              254
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="page-footer-content">
+        <h2 class="page-footer-content__title">
+          Все еще сомневаетесь?
+        </h2>
+        <p class="page-footer-content__description">
+          Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!
+        </p>
+        <div class="video">
+          <button class="button button--video" type="button" aria-label="Воспроизвести"></button>
+          <video class="video__container" src="#" poster="../img/photo/video-preview.jpg"></video>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer main-footer--catalog">
+      <p class="main-footer__title">
+        #visitSEDONA
+      </p>
+      <div class="main-footer__social">
+        <a class="main-footer__link main-footer__link--social" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Вконтакте</span>
+          <svg class="main-footer__icon" width="24" height="24" fill="currentColor">
+            <use href="img/sprite.svg#vkontakte-icon"></use>
+          </svg>
+        </a>
+        <a class="main-footer__link main-footer__link--social" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Телеграмм</span>
+          <svg width="22" height="18" fill="currentColor">
+            <use href="img/sprite.svg#telegramm-icon"></use>
+          </svg>
+        </a>
+        <a class="main-footer__link main-footer__link--social" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Youtube</span>
+          <svg width="20" height="14" fill="currentColor">
+            <use href="img/sprite.svg#youtube-icon"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="copyrirht-footer">
+        <a class="copyrirht-footer__link" href="https://htmlacademy.ru/intensive/adaptive" target=_blank>
+          Разработано
+          <span class="visually-hidden">HTML Academy</span>
+          <svg class="copyrirht-footer__logo" width="27" height="34" fill="currentColor">
+            <use href="img/sprite.svg#htmlacademy-icon"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
